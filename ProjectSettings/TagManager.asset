@@ -8,6 +8,11 @@ TagManager:
   - Door
   - Trap
   - FightTrigger
+  - spike
+  - saw
+  - metal
+  - punchy
+  - axe
   layers:
   - Default
   - TransparentFX
