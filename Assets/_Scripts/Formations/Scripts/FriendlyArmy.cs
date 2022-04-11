@@ -1,4 +1,3 @@
-using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
@@ -35,7 +34,6 @@ public class FriendlyArmy : MonoBehaviour {
 
     void SetFormation() {
         _points = Formation.EvaluatePoints().ToList();
-
         if (_points.Count > spawnedUnits.Count) {
             var remainingPoints = _points.Skip(spawnedUnits.Count);
             Spawn(remainingPoints);

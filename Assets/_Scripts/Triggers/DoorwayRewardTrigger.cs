@@ -9,7 +9,7 @@ public class DoorwayRewardTrigger : MonoBehaviour
     [SerializeField] bool _isMultiply;
 
     // Start is called before the first frame update
-    void Start() { 
+    void Start() {
         if (!_isMultiply) txt.text = "+" + _spawnCount.ToString(); else txt.text = "x" + _spawnCount.ToString();
         _formation =  ObjectPooler.Instance.formation;
     }

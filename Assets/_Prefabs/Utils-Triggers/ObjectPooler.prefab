@@ -46,13 +46,15 @@ MonoBehaviour:
   pools:
   - tag: CloneCharacter
     prefab: {fileID: 4924722189006210094, guid: b9f45d628ee7a914587154a002f4c756, type: 3}
-    size: 200
+    size: 300
   - tag: EnemyCharacter
     prefab: {fileID: 4924722189006210094, guid: 89021f61cf4f7764cba85fdf1c128320, type: 3}
-    size: 200
+    size: 300
   MainCharacter: {fileID: 0}
   EnemyMain: {fileID: 0}
+  area: {fileID: 0}
   formation: {fileID: 0}
   enemyFormation: {fileID: 0}
   friendlyArmy: {fileID: 0}
   enemyArmy: {fileID: 0}
+  shootOutScript: {fileID: 0}

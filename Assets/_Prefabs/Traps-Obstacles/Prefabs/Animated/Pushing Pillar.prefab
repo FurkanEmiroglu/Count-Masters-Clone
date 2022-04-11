@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1114269981784434893}
   - component: {fileID: 647418663282513976}
+  - component: {fileID: 6947033289784264527}
   m_Layer: 2
   m_Name: Pushing Pillar
   m_TagString: punchy
@@ -52,6 +53,20 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &6947033289784264527
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 305538929175835255}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dec6b2d2b8b0ddb4f93ce7ba596470a0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animator: {fileID: 647418663282513976}
+  _swingDelay: 0
 --- !u!1 &6169499743641794770
 GameObject:
   m_ObjectHideFlags: 0
@@ -193,6 +208,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _formation: {fileID: 0}
   _friendlyArmy: {fileID: 0}
+  hitSound: {fileID: 0}
 --- !u!1 &8193471854467185054
 GameObject:
   m_ObjectHideFlags: 0

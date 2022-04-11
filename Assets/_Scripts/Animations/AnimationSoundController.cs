@@ -5,6 +5,7 @@ using UnityEngine;
 public class AnimationSoundController : MonoBehaviour
 {
     [SerializeField] private AudioSource gunSound;
+    [SerializeField] private MuzzleFlashController controller;
 
     private void Start() {
         gunSound = GameObject.Find("AudioTree/uspSound").GetComponent<AudioSource>();
@@ -18,5 +19,9 @@ public class AnimationSoundController : MonoBehaviour
 
     void stopGunSound() {
         gunSound.Stop();
+    }
+
+    void PlayMuzzleFlash() {
+        controller.MuzzleFlashEffect();
     }
 }

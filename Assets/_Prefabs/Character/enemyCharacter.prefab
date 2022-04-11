@@ -68,6 +68,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 4263260435980350556}
     m_Modifications:
+    - target: {fileID: 2271177027497705932, guid: 3ad023a857728b644a3c26d31113e6f0, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: fb1eb559a6495b54c9128a623b05088d, type: 2}
     - target: {fileID: 3979161328681110502, guid: 3ad023a857728b644a3c26d31113e6f0, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -116,28 +120,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: stickManModelEnemy
       objectReference: {fileID: 0}
+    - target: {fileID: 6072489771963318426, guid: 3ad023a857728b644a3c26d31113e6f0, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: fb1eb559a6495b54c9128a623b05088d, type: 2}
+    - target: {fileID: 7218678850641126986, guid: 3ad023a857728b644a3c26d31113e6f0, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: fb1eb559a6495b54c9128a623b05088d, type: 2}
+    - target: {fileID: 9093646371490750423, guid: 3ad023a857728b644a3c26d31113e6f0, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: fb1eb559a6495b54c9128a623b05088d, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3ad023a857728b644a3c26d31113e6f0, type: 3}
---- !u!1 &7020711408080297743 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4355828055364735324, guid: 3ad023a857728b644a3c26d31113e6f0, type: 3}
-  m_PrefabInstance: {fileID: 6709678851885796947}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &7648593727377163701 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3979161328681110502, guid: 3ad023a857728b644a3c26d31113e6f0, type: 3}
   m_PrefabInstance: {fileID: 6709678851885796947}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &901313860070506599
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7020711408080297743}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 28f1ca0eaa94a3c4fa9991c6994dae4a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  gunSound: {fileID: 0}

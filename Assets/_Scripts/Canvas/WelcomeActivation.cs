@@ -1,10 +1,15 @@
+using UnityEngine;
+using System;
 using System.Collections;
 using System.Collections.Generic;
-using UnityEngine;
 
 public class WelcomeActivation : MonoBehaviour
 {
     public static bool isRestarted = false;
+    private GameObject obj;
+    public List<GameObject> reverseobj = new List<GameObject>();
+    
+
     private void Start() {
         if (!isRestarted) {
             GameEvents.current.onStartGame += setDeactive;

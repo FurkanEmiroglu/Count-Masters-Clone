@@ -4,11 +4,14 @@ using System.Collections;
 public class AnimationStateController : MonoBehaviour
 {
     Animator animator;
+    Transform _targetToShoot;
+   
     
     // this controller is for friendlyUnits
     private void Start()
     {
         animator = GetComponentInChildren<Animator>();
+        _targetToShoot = ObjectPooler.Instance.EnemyMain.transform;
         GameEvents.current.OnFightZoneTriggerEnter += stopAndFight;
         GameEvents.current.OnFightZoneTriggerExit += startRunning;
         GameEvents.current.OnFightZoneTriggerExit += resetDyingTrigger;
@@ -17,11 +20,13 @@ public class AnimationStateController : MonoBehaviour
 
     void stopAndFight() {
         startShootingAnimation();
+        gameObject.transform.LookAt(_targetToShoot);
     }
 
 
     void startRunning() {
         stopShootingAnimation();
+        transform.rotation = Quaternion.Euler(0, 0, 0);
     }
 
 
